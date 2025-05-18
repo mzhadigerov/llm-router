@@ -1,3 +1,31 @@
+Metadata-Version: 2.4
+Name: free-llm-router
+Version: 0.1.0
+Summary: A library that routes requests to free LLM API providers
+Home-page: https://github.com/yourusername/free-llm-router
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: aiohttp>=3.8.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
 # Free LLM Router
 
 A Python library that routes requests to free LLM API providers, prioritizing models by quality and ensuring high availability by automatically handling rate limits and fallbacks.

@@ -1,0 +1,37 @@
+# config/providers.yaml
+providers:
+  groq:
+    base_url: "https://api.groq.com/openai/v1"
+    rate_limits:
+      requests_per_minute: 30
+      tokens_per_minute: 100000
+    models:
+      llama3-8b-8192: 6
+      llama3-70b-8192: 8
+      gemma-7b-it: 5
+      mixtral-8x7b-instruct: 7
+
+  perplexity:
+    base_url: "https://api.perplexity.ai"
+    rate_limits:
+      requests_per_minute: 25
+      tokens_per_minute: 80000
+    models:
+      sonar-small-online: 6
+      sonar-medium-online: 7
+      sonar-large-online: 8
+      llama3-70b: 8
+      mixtral-8x7b: 7
+      codellama-34b: 7
+
+  openrouter:
+    base_url: "https://openrouter.ai/api/v1"
+    rate_limits:
+      requests_per_minute: 20
+      tokens_per_minute: 50000
+    models:
+      anthropic/claude-3-haiku: 7
+      anthropic/claude-3-sonnet: 8
+      google/gemini-1.5-pro: 8
+      mistralai/mistral-medium: 7
+      meta-llama/llama-3-70b-instruct: 8
